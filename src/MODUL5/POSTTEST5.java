@@ -64,7 +64,6 @@ public class POSTTEST5 extends javax.swing.JFrame {
         jtable = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
         addComponentListener(new java.awt.event.ComponentAdapter() {
             public void componentShown(java.awt.event.ComponentEvent evt) {
                 formComponentShown(evt);
@@ -203,28 +202,32 @@ public class POSTTEST5 extends javax.swing.JFrame {
 
         jPanel6.setBackground(new java.awt.Color(153, 153, 255));
 
-        jsimpan.setIcon(new javax.swing.ImageIcon("D:\\NetBeansProjects\\Visual_C1_1515015103_POSTTEST\\VISUAL_C1_1515015103_100996\\src\\MODUL5\\simpan.png")); // NOI18N
+        jsimpan.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jsimpan.setText("SIMPAN");
         jsimpan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jsimpanActionPerformed(evt);
             }
         });
 
-        jupdate.setIcon(new javax.swing.ImageIcon("D:\\NetBeansProjects\\Visual_C1_1515015103_POSTTEST\\VISUAL_C1_1515015103_100996\\src\\MODUL5\\update.png")); // NOI18N
+        jupdate.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jupdate.setText("UPDATE");
         jupdate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jupdateActionPerformed(evt);
             }
         });
 
-        jhapus.setIcon(new javax.swing.ImageIcon("D:\\NetBeansProjects\\Visual_C1_1515015103_POSTTEST\\VISUAL_C1_1515015103_100996\\src\\MODUL5\\hapus.png")); // NOI18N
+        jhapus.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jhapus.setText("HAPUS");
         jhapus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jhapusActionPerformed(evt);
             }
         });
 
-        jtambah.setIcon(new javax.swing.ImageIcon("D:\\NetBeansProjects\\Visual_C1_1515015103_POSTTEST\\VISUAL_C1_1515015103_100996\\src\\MODUL5\\tAMBAH.png")); // NOI18N
+        jtambah.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jtambah.setText("TAMBAH");
         jtambah.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jtambahActionPerformed(evt);
@@ -242,22 +245,22 @@ public class POSTTEST5 extends javax.swing.JFrame {
                 .addComponent(jsimpan, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jupdate, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jhapus)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jhapus, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jtambah)
-                    .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jupdate)
-                        .addComponent(jhapus)
-                        .addGroup(jPanel6Layout.createSequentialGroup()
-                            .addGap(2, 2, 2)
-                            .addComponent(jsimpan))))
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jtambah, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jsimpan, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE)
+                            .addComponent(jupdate, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jhapus, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap())
         );
 
@@ -299,7 +302,7 @@ public class POSTTEST5 extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 127, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 129, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
